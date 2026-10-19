@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f7f3ec">
+  <meta name="description" content="Wszystkie informacje o ślubie Izabeli i Karola w Il Sodino, w pięknej Umbrii we Włoszech. 9–12 września 2027.">
+  <title>Izabela & Karol | Nasz ślub w Umbrii</title>
+
+  <style>
+    :root {
+      --cream: #f7f3ec;
+      --paper: #fffdf8;
+      --olive: #60684a;
+      --deep: #30372b;
+      --terracotta: #b9755c;
+      --muted: #77786b;
+      --line: #e5ded2;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 20px;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      margin: 0;
+      background: var(--cream);
+      color: var(--deep);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 17px;
+      line-height: 1.7;
+      overflow-wrap: break-word;
+    }
+
+    a {
+      color: inherit;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    a:focus-visible {
+      outline: 2px solid var(--terracotta);
+      outline-offset: 4px;
+    }
+
+    .top-note {
+      padding: 10px 14px;
+      text-align: center;
+      background: var(--olive);
+      color: var(--paper);
+      font: 10px/1.7 Arial, sans-serif;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+
+    .hero {
+      min-height: 74svh;
+      min-height: 74vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 65px 22px 58px;
+      background:
+        radial-gradient(
+          ellipse at 50% 25%,
+          #e1e1d0 0,
+          #eee5d6 40%,
+          var(--cream) 78%
+        );
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before,
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 160px;
+      height: 260px;
+      border: 1px solid rgba(96, 104, 74, .22);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .hero::before {
+      left: -110px;
+      top: 7%;
+      transform: rotate(35deg);
+    }
+
+    .hero::after {
+      right: -110px;
+      bottom: 3%;
+      transform: rotate(-35deg);
+    }
+
+    .hero-inner {
+      width: 100%;
+      max-width: 620px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .eyebrow {
+      font: 10px/1.8 Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: .16em;
+      color: var(--olive);
+    }
+
+    h1 {
+      font-weight: 400;
+      font-size: clamp(43px, 11vw, 76px);
+      line-height: 1.03;
+      margin: 22px 0 18px;
+      letter-spacing: -.045em;
+    }
+
+    .ampersand {
+      color: var(--terracotta);
+      font-style: italic;
+    }
+
+    .hero p {
+      font-size: 18px;
+      line-height: 1.55;
+      margin: 0 auto 23px;
+      max-width: 430px;
+    }
+
+    .place-line {
+      font: 10px/1.9 Arial, sans-serif;
+      letter-spacing: .09em;
+      text-transform: uppercase;
+      color: var(--olive);
+    }
+
+    .button {
+      display: inline-flex;
+      min-height: 46px;
+      align-items: center;
+      justify-content: center;
+      margin-top: 19px;
+      padding: 12px 19px;
+      border: 1px solid var(--olive);
+      border-radius: 2px;
+      text-align: center;
+      text-decoration: none;
+      font: 10px/1.6 Arial, sans-serif;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      transition: background .2s, color .2s;
+    }
+
+    .button:hover {
+      background: var(--olive);
+      color: white;
+    }
+
+    main {
+      width: 100%;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 22px 35px;
+    }
+
+    section {
+      padding: 55px 0;
+      border-bottom: 1px solid var(--line);
+      scroll-margin-top: 15px;
+    }
+
+    .section-label {
+      color: var(--terracotta);
+      text-transform: uppercase;
+      letter-spacing: .15em;
+      font: 10px/1.7 Arial, sans-serif;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: clamp(31px, 8vw, 42px);
+      line-height: 1.12;
+      font-weight: 400;
+      margin: 0 0 20px;
+      letter-spacing: -.02em;
+    }
+
+    h3 {
+      font-size: 22px;
+      line-height: 1.3;
+      font-weight: 400;
+      margin: 0 0 10px;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    strong {
+      font-weight: 600;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    .info-card {
+      min-width: 0;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      padding: 22px 20px;
+    }
+
+    .info-card h3 {
+      margin-bottom: 12px;
+    }
+
+    .small {
+      color: var(--muted);
+      font: 12px/1.8 Arial, sans-serif;
+    }
+
+    .timeline {
+      list-style: none;
+      padding: 0;
+      margin: 22px 0 0;
+    }
+
+    .timeline li {
+      display: grid;
+      grid-template-columns: 66px minmax(0, 1fr);
+      gap: 12px;
+      padding: 17px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .timeline li:last-child {
+      border-bottom: 0;
+    }
+
+    .timeline time {
+      color: var(--terracotta);
+      font: 11px/1.8 Arial, sans-serif;
+      letter-spacing: .02em;
+      padding-top: 4px;
+    }
+
+    .timeline strong {
+      font-weight: 400;
+      font-size: 19px;
+      line-height: 1.4;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .timeline .small {
+      display: block;
+    }
+
+    .pill {
+      display: inline-block;
+      border: 1px solid var(--line);
+      padding: 5px 9px;
+      margin: 4px 3px 0 0;
+      color: var(--olive);
+      font: 10px/1.6 Arial, sans-serif;
+    }
+
+    .text-link {
+      display: inline-block;
+      padding: 7px 0;
+      color: var(--olive);
+      font: 11px/1.7 Arial, sans-serif;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 4px;
+      overflow-wrap: anywhere;
+    }
+
+    .rsvp {
+      background: var(--olive);
+      color: var(--paper);
+      padding: 30px 21px;
+      margin-top: 28px;
+      border: 0;
+    }
+
+    .rsvp h2 {
+      font-size: clamp(29px, 7vw, 36px);
+    }
+
+    .rsvp .section-label {
+      color: #e7c4b4;
+    }
+
+    .rsvp .button {
+      border-color: var(--paper);
+      color: var(--paper);
+    }
+
+    .rsvp .button:hover {
+      background: var(--paper);
+      color: var(--olive);
+    }
+
+    .note {
+      padding: 15px;
+      margin-top: 20px;
+      background: #eeeadf;
+      border-left: 2px solid var(--olive);
+      font-size: 15px;
+    }
+
+    .divider-ornament {
+      color: var(--olive);
+      text-align: center;
+      font-size: 25px;
+      line-height: 1.4;
+      margin: 20px 0;
+    }
+
+    footer {
+      padding: 29px 20px 35px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    footer .heart {
+      color: var(--terracotta);
+    }
+
+    footer .small {
+      margin-top: 6px;
+    }
+
+    @media (min-width: 650px) {
+      .hero {
+        min-height: 78vh;
+        padding: 76px 25px 68px;
+      }
+
+      .hero::before,
+      .hero::after {
+        width: 220px;
+        height: 320px;
+      }
+
+      .hero::before {
+        left: -140px;
+        top: 8%;
+      }
+
+      .hero::after {
+        right: -140px;
+        bottom: 3%;
+      }
+
+      .eyebrow {
+        font-size: 11px;
+        letter-spacing: .2em;
+      }
+
+      .place-line {
+        font-size: 11px;
+        letter-spacing: .1em;
+      }
+
+      main {
+        padding: 0 30px 50px;
+      }
+
+      section {
+        padding: 68px 0;
+      }
+
+      .info-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .info-card {
+        padding: 24px;
+      }
+
+      .timeline li {
+        grid-template-columns: 78px minmax(0, 1fr);
+        gap: 14px;
+        padding: 18px 0;
+      }
+
+      .rsvp {
+        padding: 34px 30px;
+      }
+    }
+
+    @media (max-width: 360px) {
+      .hero {
+        padding-left: 18px;
+        padding-right: 18px;
+      }
+
+      main {
+        padding-left: 17px;
+        padding-right: 17px;
+      }
+
+      section {
+        padding: 45px 0;
+      }
+
+      .info-card {
+        padding: 19px 16px;
+      }
+
+      .timeline li {
+        grid-template-columns: 58px minmax(0, 1fr);
+        gap: 9px;
+      }
+
+      .timeline time {
+        font-size: 10px;
+      }
+
+      .button {
+        max-width: 100%;
+        padding-left: 14px;
+        padding-right: 14px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="top-note">Świętujemy miłość w sercu Włoch</div>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">Z radością zapraszamy na nasz ślub</div>
+      <h1>Izabela <span class="ampersand">&</span><br>Karol</h1>
+      <p>Mała podróż, wielka miłość i kilka pięknych dni spędzonych razem w słonecznej Italii.</p>
+      <div class="place-line">Umbria, Włochy · Apartamenty Il Sodino</div>
+      <a class="button" href="#informacje">Poznaj szczegóły</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="powitanie" class="center">
+      <div class="section-label">Cieszymy się, że tu jesteś</div>
+      <h2>Do zobaczenia we Włoszech!</h2>
+      <div class="divider-ornament">❧</div>
+      <p>Marzymy o tym, by powiedzieć sobie „tak” w pięknym miejscu, w otoczeniu włoskich wzgórz, dobrego jedzenia i najbliższych nam osób.</p>
+      <p>Chcemy przeżyć te dni spokojnie, bez pośpiechu — za to z mnóstwem rozmów, śmiechu i wspólnych wspomnień. Tutaj znajdziesz najważniejsze informacje, które pomogą Ci zaplanować pobyt.</p>
+    </section>
+
+    <section id="informacje">
+      <div class="section-label">Najważniejsze informacje</div>
+      <h2>Gdzie i kiedy?</h2>
+
+      <div class="info-grid">
+        <div class="info-card">
+          <h3>📍 Miejsce</h3>
+          <p><strong>Apartamenty Il Sodino</strong><br>Umbria, Włochy</p>
+          <a class="button" href="https://www.google.com/maps/search/?api=1&query=Il+Sodino+Umbria+Italy" target="_blank" rel="noopener noreferrer">Otwórz mapę</a>
+          <p style="margin-top:12px">
+            <a class="text-link" href="https://ilsodino.it/" target="_blank" rel="noopener noreferrer">Strona internetowa obiektu ↗</a>
+          </p>
+          <!-- DO UZUPEŁNIENIA: wstaw bezpośredni, potwierdzony adres profilu Instagram. -->
+          <p>
+            <a class="text-link" href="https://www.instagram.com/ilsodino1738/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+          </p>
+        </div>
+
+        <div class="info-card">
+          <h3>♡ Data</h3>
+          <p><strong>9–12 września 2027</strong></p>
+          <p>Cztery dni wspólnego świętowania.</p>
+          <p class="small">Ceremonia ślubna planowana jest na 10 września 2027 r. Godziny i szczegółowy harmonogram podamy bliżej terminu.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="plan">
+      <div class="section-label">Plan świętowania</div>
+      <h2>Jak spędzimy ten czas?</h2>
+      <p>Chcemy, żeby te dni były okazją nie tylko do świętowania, ale też do odpoczynku i cieszenia się włoskim klimatem.</p>
+
+      <ul class="timeline">
+        <li>
+          <time>09.09<br>czwartek</time>
+          <div>
+            <strong>Przyjazdy i powitanie</strong>
+            <span class="small">Spokojne rozpakowanie, pierwsze spotkania i wspólny wieczór.</span>
+          </div>
+        </li>
+        <li>
+          <time>10.09<br>piątek</time>
+          <div>
+            <strong>Nasz dzień!</strong>
+            <span class="small">Ceremonia, wspólny toast, kolacja i zabawa do wieczora.</span>
+          </div>
+        </li>
+        <li>
+          <time>11.09<br>sobota</time>
+          <div>
+            <strong>Chill, basen i Pizza Party</strong>
+            <span class="small">Relaks przy basenie, włoskie jedzenie, pizza i wspólny czas bez pośpiechu. Łapiemy słońce, odpoczywamy i cieszymy się, że jesteśmy razem!</span>
+          </div>
+        </li>
+        <li>
+          <time>12.09<br>niedziela</time>
+          <div>
+            <strong>Włoskie pożegnanie</strong>
+            <span class="small">Śniadanie, kawa i ostatnie chwile razem przed powrotem do domu.</span>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="podroz">
+      <div class="section-label">Praktycznie</div>
+      <h2>Mała ściąga przed podróżą</h2>
+
+  <div class="info-card">
+  <h3>✈️ Jak dolecieć?</h3>
+  <p>Do Il Sodino można dotrzeć z kilku lotnisk:</p>
+
+  <p><strong>Perugia (PEG) — ok. 35 km</strong><br>
+  Najbliższe lotnisko, około 30 minut jazdy samochodem.</p>
+
+  <p><strong>Rzym Fiumicino (FCO) — ok. 210 km</strong><br>
+  Większe lotnisko, około 2 godz. 20 min jazdy samochodem.</p>
+
+  <p><strong>Florencja (FLR) — ok. 150 km</strong><br>
+  Lotnisko w Toskanii, około 2 godz. jazdy samochodem.</p>
+
+  <p>Jeśli będziecie potrzebować pomocy w zaplanowaniu podróży lub w czymkolwiek innym, dawajcie śmiało znać — chętnie pomożemy! ❤️</p>
+</div>
+
+      <div class="info-card">
+        <h3>🏡 Nocleg</h3>
+        <p>Naszym domem na te kilka dni będzie IL Sodino 1738 — historyczny, kamienny obiekt z 1738 roku, położony niedaleko Jeziora Trazymeńskiego, w pięknej Umbrii.</p>
+
+        <p>Na miejscu znajduje się 6 niezależnych apartamentów. Do dyspozycji gości są między innymi basen, ogród, parking, Wi-Fi oraz rowery.</p>
+
+        <p><strong>Zameldowanie i wymeldowanie</strong><br></p>
+<p> Check-in 16:00-19:00</p>
+
+<p> Check-out 10:00 </p>
+
+
+        <p><a class="text-link" href="https://ilsodino.it/" target="_blank" rel="noopener noreferrer">Strona internetowa obiektu ↗</a></p>
+      </div>
+
+      <div class="info-card">
+        <h3>☀️ Co zabrać?</h3>
+        <p>Postaw na coś, w czym czujesz się pięknie i wygodnie. Bez sztywnego dress code’u — elegancko, swobodnie i po swojemu. Najważniejsze, żebyście czuli się dobrze i mogli w pełni cieszyć się wspólnym świętowaniem. ❤️ Pamiętajcie też, że spędzimy razem kilka dni we włoskim klimacie, więc przydadzą się zarówno stylizacje na wyjątkowy wieczór, jak i coś luźniejszego na odpoczynek przy basenie.</p>
+        <div>
+          <span class="pill">słońce</span>
+          <span class="pill">wygodne buty</span>
+          <span class="pill">strój kąpielowy</span>
+          <span class="pill">dobry humor</span>
+          <span class="pill">włoski luz</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="odserca">
+      <div class="section-label">Od serca</div>
+      <h2>Najważniejsza jest Wasza obecność</h2>
+      <p>Najbardziej cieszymy się na to, że spędzimy z Wami ten wyjątkowy czas. Nie możemy doczekać się wspólnych toastów, rozmów, śmiechu i wspomnień, do których będziemy wracać przez długie lata.</p>
+    </section>
+
+    <section class="rsvp" id="kontakt">
+  <div class="section-label">Daj nam znać</div>
+  <h2>Potwierdzenie obecności</h2>
+  <p>Będziemy bardzo wdzięczni za potwierdzenie obecności tak szybko, jak to możliwe, najlepiej jeszcze przed marcem 2027 roku. Pomoże nam to odpowiednio zaplanować te kilka wyjątkowych dni i dopracować wszystkie szczegóły, abyśmy mogli w pełni cieszyć się tym pięknym czasem razem z Wami! 💌</p>
+</section>
+  </main>
+
+  <footer>
+    <div>Do zobaczenia w słonecznej Umbrii <span class="heart">♥</span></div>
+    <div class="small">Izabela & Karol · 2027</div>
+    <div class="small" style="margin-top:12px">
+      <a href="https://ilsodino.it/" target="_blank" rel="noopener noreferrer">Il Sodino</a>
+      ·
+      <a href="https://www.instagram.com/ilsodino1738/" target="_blank" rel="noopener noreferrer">Instagram </a>
+    </div>
+  </footer>
+</body>
+</html>
